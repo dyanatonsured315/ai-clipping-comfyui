@@ -4,16 +4,21 @@
 
 Most AI education either teaches you to prompt a tool, or teaches you to build one. This teaches neither — it teaches you to turn AI-generated image/video/audio into an actual, priced, sellable service or product. Every module ends with pricing, positioning, and where to find your first client — not just "how it works."
 
-Six independent tracks — pick whichever matches the business you want to build, in any order. They're numbered and ranked by real-world demand evidence, not by difficulty or prerequisite order:
+Eleven independent tracks — pick whichever matches the business you want to build, in any order. They're numbered by demand evidence and coverage breadth, not by difficulty or prerequisite order:
 
 | Track | Status |
 |---|---|
 | 1. AI Video Ads & UGC | ✅ Live |
-| 2. Faceless AI Channels | ⬜ Coming soon |
-| 3. AI Avatars & Influencers | ⬜ Coming soon |
-| 4. AI Product Photography | ⬜ Coming soon |
-| 5. AI Real Estate Staging | ⬜ Coming soon |
-| 6. AI Headshots & Portraits | ⬜ Coming soon |
+| 2. AI Filmmaking | ⬜ Coming soon |
+| 3. Faceless AI Channels | ⬜ Coming soon |
+| 4. AI Content Factories | ⬜ Coming soon |
+| 5. AI Avatars & Influencers | ⬜ Coming soon |
+| 6. AI Audio & Music | ⬜ Coming soon |
+| 7. AI Product Photography | ⬜ Coming soon |
+| 8. AI Real Estate Staging | ⬜ Coming soon |
+| 9. AI Headshots & Portraits | ⬜ Coming soon |
+| 10. AI Tools Mastery | ⬜ Coming soon |
+| 11. AI Freelancing & Agency Business | ⬜ Coming soon |
 
 See [ROADMAP.md](ROADMAP.md) for full module-by-module status.
 

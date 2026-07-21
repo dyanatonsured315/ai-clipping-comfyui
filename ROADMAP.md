@@ -1,6 +1,6 @@
 # Roadmap
 
-Every track and module, in order, with status. This is the single source of truth for what's live vs. planned — track order reflects demand evidence, not difficulty or app inventory.
+Every track and module, in order, with status. This is the single source of truth for what's live vs. planned — track order reflects demand evidence and coverage breadth, not difficulty or app inventory.
 
 Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 
@@ -14,7 +14,17 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 4 | Pricing & Selling UGC Ads | ✅ |
 | 5 | Case Study Teardown | ✅ |
 
-## Track 2 — Faceless AI Channels ⬜
+## Track 2 — AI Filmmaking ⬜
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Screenplay & Story Generation | ⬜ |
+| 2 | Storyboarding & Shot Planning | ⬜ |
+| 3 | Camera Movement & Cinematography Prompts | ⬜ |
+| 4 | Assembling a Short Film | ⬜ |
+| 5 | Selling Short-Form Films (festivals, sponsors, licensing) | ⬜ |
+
+## Track 3 — Faceless AI Channels ⬜
 
 | # | Module | Status |
 |---|---|---|
@@ -24,7 +34,17 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 4 | Scaling to Multiple Channels | ⬜ |
 | 5 | Monetization Ladder | ⬜ |
 
-## Track 3 — AI Avatars & Influencers ⬜
+## Track 4 — AI Content Factories ⬜
+
+| # | Module | Status |
+|---|---|---|
+| 1 | The Idea → Script → Storyboard → Video → Voice → Music → Captions → Publish Pipeline | ⬜ |
+| 2 | Building a TikTok/Reels Factory | ⬜ |
+| 3 | Building a YouTube Shorts Factory | ⬜ |
+| 4 | Batching & Scheduling at Volume | ⬜ |
+| 5 | Selling Content-Factory Output as a Service | ⬜ |
+
+## Track 5 — AI Avatars & Influencers ⬜
 
 | # | Module | Status |
 |---|---|---|
@@ -34,7 +54,17 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 4 | Agency Case Study: Small-Team Economics | ⬜ |
 | 5 | Platform Economics & Fee Disclosure | ⬜ |
 
-## Track 4 — AI Product Photography / E-commerce ⬜
+## Track 6 — AI Audio & Music ⬜
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Voice Cloning & TTS Basics | ⬜ |
+| 2 | AI Dubbing & Translation | ⬜ |
+| 3 | Podcast Production with AI | ⬜ |
+| 4 | AI Music & Singing Voice Conversion | ⬜ |
+| 5 | Selling Voice/Audio Services | ⬜ |
+
+## Track 7 — AI Product Photography / E-commerce ⬜
 
 | # | Module | Status |
 |---|---|---|
@@ -43,7 +73,7 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 3 | Selling as a Productized Service | ⬜ |
 | 4 | Batch Workflows for Catalogs | ⬜ |
 
-## Track 5 — AI Real Estate (Virtual Staging) ⬜
+## Track 8 — AI Real Estate (Virtual Staging) ⬜
 
 | # | Module | Status |
 |---|---|---|
@@ -51,12 +81,35 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 2 | Pricing Against Traditional Staging | ⬜ |
 | 3 | Selling to Realtors & Agencies | ⬜ |
 
-## Track 6 — AI Headshots & Portraits ⬜
+## Track 9 — AI Headshots & Portraits ⬜
 
 | # | Module | Status |
 |---|---|---|
 | 1 | Consistent Headshot Generation | ⬜ |
 | 2 | Standing Out Against Fiverr Competition | ⬜ |
+
+## Track 10 — AI Tools Mastery ⬜
+
+Not tool tutorials — a buyer's guide: which tool for which creative outcome, and why.
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Image Models — Which One for Which Use Case | ⬜ |
+| 2 | Video Models — Which One for Which Use Case | ⬜ |
+| 3 | Voice/Audio Models — Which One for Which Use Case | ⬜ |
+| 4 | API vs. Local: A Decision Framework | ⬜ |
+
+## Track 11 — AI Freelancing & Agency Business ⬜
+
+The business skills every other track assumes you already have.
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Pricing Your Services | ⬜ |
+| 2 | Contracts & Scope Basics | ⬜ |
+| 3 | Finding & Closing Clients | ⬜ |
+| 4 | Scaling from Freelancer to Small Agency | ⬜ |
+| 5 | Building a Portfolio That Sells | ⬜ |
 
 ## Cross-track modules (referenced from every track, not tied to one)
 
@@ -67,4 +120,4 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 
 ---
 
-Track 1 ships first, fully, to prove the format before other tracks are written. See each track's own `README.md` for a one-line description.
+Track 1 shipped first, fully, to prove the format before other tracks are written. See each track's own `README.md` for a one-line description.
