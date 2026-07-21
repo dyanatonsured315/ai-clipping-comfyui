@@ -1,163 +1,261 @@
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square" alt="MIT License"></a>
-  <a href="ROADMAP.md"><img src="https://img.shields.io/badge/tracks-14-3553ff?style=flat-square" alt="14 tracks"></a>
-  <a href="ROADMAP.md"><img src="https://img.shields.io/badge/modules-60_mapped-3553ff?style=flat-square" alt="60 modules mapped"></a>
-  <a href="https://github.com/Anil-matcha/ai-creator-academy/stargazers"><img src="https://img.shields.io/github/stars/Anil-matcha/ai-creator-academy?style=flat-square&color=3553ff" alt="GitHub stars"></a>
-</p>
+# AI Clipping ComfyUI Nodes — Open-Source Opus Clip Alternative
 
-<h1 align="center">AI Creator Academy</h1>
+> **A free, open-source [Opus Clip](https://www.opus.pro) alternative for [ComfyUI](https://github.com/comfyanonymous/ComfyUI).**
+> Turn long-form videos, podcasts, interviews, lectures, and livestreams into ranked viral-ready short clips for **YouTube Shorts**, **TikTok**, and **Instagram Reels** — directly inside your ComfyUI workflow.
+> Single managed API call: transcription, virality ranking, dedupe, and face-tracked auto-crop all run server-side via [muapi.ai](https://muapi.ai). No local Whisper, no local LLM, no GPU.
 
-<p align="center"><b>Free, open-source curriculum for making money with generative AI image, video, and audio — for creators and agencies, not developers.</b></p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-Custom%20Node-blue)](https://github.com/comfyanonymous/ComfyUI)
+[![Opus Clip Alternative](https://img.shields.io/badge/Opus%20Clip-Alternative-orange)](#why-this-vs-opus-clip-klap-vizard)
+
+> Searching for an Opus Clip alternative, a Klap.app alternative, or a Vizard / 2short.ai alternative that you can run inside ComfyUI? You're in the right place. This pack ships AI clipping, AI highlight extraction, automatic vertical reframing, face tracking, and viral-clip ranking — all as native ComfyUI nodes.
 
 ---
 
-Most AI education either teaches you to prompt a tool, or teaches you to build one. This teaches neither — it teaches you to turn AI-generated image/video/audio into an actual, priced, sellable service or product. **Every module ends with pricing, positioning, and where to find your first client — not just "how it works."**
+## Related Projects
 
-> ⭐ **[Star this repo](https://github.com/Anil-matcha/ai-creator-academy/stargazers)** to bookmark it — new tracks and modules ship regularly.
+- [ai-clipping-generator](https://github.com/SamurAIGPT/ai-clipping-generator) — Ready-made Next.js SaaS for AI video clipping — no ComfyUI needed
+- [AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator) — Full YouTube Shorts generator with virality ranking and auto-crop
 
-## Why this exists
+## Why This vs. Opus Clip / Klap / Vizard?
 
-Paid communities teaching this (Skool/Whop-style, $47–$97/mo) already cluster around exactly these niches — the demand is proven. What's missing is a version that's free, that cites real numbers instead of vague income claims, and that treats "how do I actually get paid for this" as the main subject instead of an afterthought bolted onto a tool tutorial.
+| | This (AI Clipping nodes) | Opus Clip / Klap / Vizard |
+|---|---|---|
+| Native ComfyUI integration | ✅ — clip, then chain into upscale / lipsync / VHS / etc. | ❌ — closed web app |
+| Pricing | Pay-as-you-go via muapi.ai (no subscription) | Monthly subscription tiers |
+| Self-hostable / scriptable | ✅ — open-source nodes + open API | ❌ |
+| Aspect ratios | 9:16 / 1:1 / 4:5 | 9:16 / 1:1 / 4:5 |
+| Face-tracked vertical crop | ✅ | ✅ |
+| Viral-score per clip | ✅ (0–100 + hook line + reason) | ✅ |
+| Coordinates-only mode | ✅ — render with your own ffmpeg / VHS pipeline | ❌ |
 
-## Table of contents
+If you're shipping shorts at scale and want clipping to be one node in a bigger ComfyUI graph (intro/outro overlays, watermark removal, AI b-roll, captions, lipsync, etc.), this is the cleanest path.
 
-- [Tracks](#tracks)
-- [The shape of a module](#the-shape-of-a-module)
-- [Getting started](#getting-started)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [License](#license)
+---
 
-## Tracks
+## What is AI Clipping?
 
-14 independent tracks — pick whichever matches the business you want to build, in any order. Numbered by demand evidence and coverage breadth, not by difficulty or prerequisite order. See [ROADMAP.md](ROADMAP.md) for full module-by-module status.
+AI Clipping converts a long-form video (podcast, interview, lecture, vlog, livestream, …) into ranked short-form clips suitable for TikTok / Reels / YouTube Shorts. The server handles the entire pipeline:
 
-| # | Track | What you build | Modules | Status |
-|---|---|---|---|---|
-| 1 | [AI Video Ads & UGC](tracks/01-ai-video-ads-ugc/) | Sellable UGC-style ad batches for real brands | 5 | ✅ Live |
-| 2 | [AI Filmmaking](tracks/02-ai-filmmaking/) | Short films, trailers, music videos | 5 | ⬜ Coming soon |
-| 3 | [Faceless AI Channels](tracks/03-faceless-ai-channels/) | A YouTube/TikTok channel with no camera | 5 | ⬜ Coming soon |
-| 4 | [AI Content Factories](tracks/04-ai-content-factories/) | Idea → script → video → publish, at volume | 6 | ⬜ Coming soon |
-| 5 | [AI Avatars & Influencers](tracks/05-ai-avatars-and-influencers/) | A consistent AI character as a business | 5 | ⬜ Coming soon |
-| 6 | [AI Audio & Music](tracks/06-ai-audio-and-music/) | Voice cloning, dubbing, podcasts, music | 5 | ⬜ Coming soon |
-| 7 | [AI Product Photography](tracks/07-ai-product-photography/) | Studio-quality product shots, no photographer | 4 | ⬜ Coming soon |
-| 8 | [AI Fashion & Virtual Try-On](tracks/08-ai-fashion-and-virtual-tryon/) | Garment try-on for fashion e-commerce | 4 | ⬜ Coming soon |
-| 9 | [AI Real Estate Staging](tracks/09-ai-real-estate-staging/) | Empty room → staged listing photo | 3 | ⬜ Coming soon |
-| 10 | [AI Headshots & Portraits](tracks/10-ai-headshots-and-portraits/) | Consistent professional headshots | 2 | ⬜ Coming soon |
-| 11 | [AI Print-on-Demand & Merch](tracks/11-ai-print-on-demand-and-merch/) | Sellable AI art on merch, no client needed | 4 | ⬜ Coming soon |
-| 12 | [AI Stock Content & Licensing](tracks/12-ai-stock-content-and-licensing/) | A licensable stock catalog, sold repeatedly | 3 | ⬜ Coming soon |
-| 13 | [AI Tools Mastery](tracks/13-ai-tools-mastery/) | Which model for which outcome — a buyer's guide | 4 | ⬜ Coming soon |
-| 14 | [AI Freelancing & Agency Business](tracks/14-ai-freelancing-and-agency-business/) | Pricing, contracts, clients, scaling a team | 5 | ⬜ Coming soon |
+- **Whisper transcription** — audio → timestamped segments
+- **Highlight ranking** through a virality framework — hook moments, emotional peaks, opinion bombs, revelation moments, conflict, quotable lines, story peaks, practical value
+- **Overlap dedupe** — collapses near-duplicate candidates by score
+- **Top-N selection** — keeps the highest-scoring N
+- **Face-tracked vertical auto-crop** — renders each clip at the requested aspect ratio
 
-### Start here
+Each clip ships with a **viral score (0–100)**, an **opening hook line**, and a one-sentence **"why it works"** reason — all surfaced as a JSON output you can pass to downstream nodes.
 
-[**Track 1: AI Video Ads & UGC**](tracks/01-ai-video-ads-ugc/) is the only fully-written track today — it's the proof-of-format pilot every other track will follow.
+Reference implementation (open source): [SamurAIGPT/AI-Youtube-Shorts-Generator](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator)
+Underlying API: https://muapi.ai/playground/ai-clipping
 
-<details>
-<summary><b>Track 1 — all 5 modules (click to expand)</b></summary>
+---
 
-| # | Module |
-|:---:|---|
-| 1 | [How AI UGC Actually Works](tracks/01-ai-video-ads-ugc/01-how-ugc-works/module.md) |
-| 2 | [Character & Face Consistency](tracks/01-ai-video-ads-ugc/02-character-consistency/module.md) |
-| 3 | [Building a 10-Ad Batch](tracks/01-ai-video-ads-ugc/03-building-an-ad-batch/module.md) |
-| 4 | [Pricing & Selling UGC Ads](tracks/01-ai-video-ads-ugc/04-pricing-and-selling-ugc/module.md) |
-| 5 | [Case Study Teardown](tracks/01-ai-video-ads-ugc/05-case-study-teardown/module.md) |
+## Nodes
 
-</details>
+| Node | Description |
+|------|-------------|
+| 🔑 AI Clipping API Key | Set your key once — wire to all nodes |
+| ✂️ AI Clipping | Long video → ranked vertical short clips (full pipeline) |
+| ✂️ AI Clipping Pick Clip | Pick the Nth clip from the highlights JSON for fan-out |
+| ✂️ AI Clipping Save Video | Download a clip URL → disk + ComfyUI IMAGE frames |
 
-### What a module actually looks like
+---
 
-An excerpt from Track 1, so you know what you're getting before you click in.
+## Installation
 
-<table>
-<tr>
-<td valign="top" width="50%">
+### Via ComfyUI Manager (recommended)
+1. Open **ComfyUI Manager** → **Install via Git URL**
+2. Paste: `https://github.com/Anil-matcha/ai-clipping-comfyui`
+3. Restart ComfyUI
 
-**From Module 1 — the script structure** <sub><i>Do It</i></sub>
-
-```
-Hook (0-2 sec)
-[A question, bold claim, or visual
-surprise that stops the scroll]
-
-Problem / Pitch (2-15 sec)
-[What problem does the viewer have,
-said like you'd tell a friend]
-
-Proof / Demo (15-25 sec)
-Call to Action (25-30 sec)
-```
-
-</td>
-<td valign="top" width="50%">
-
-**From Module 4 — real pricing ranges** <sub><i>Launch It</i></sub>
-
-| Stage | Price |
-|---|---|
-| Gig-level, per ad | $10–$55 |
-| Project batch (5-8 ads) | $150–$300 |
-| Agency retainer | $1,500–$3,000/mo |
-
-Anchored to documented freelance-marketplace and agency-retainer ranges — not invented.
-
-</td>
-</tr>
-</table>
-
-## The shape of a module
-
-Every module in every track follows the same structure, so you always know what you're getting:
-
-```
-Problem → Concept → Do It → Compare Tools → Launch It → Exercises
-```
-
-- **Problem / Concept** — the real pain this solves, and the mental model behind it, before any steps.
-- **Do It** — the actual step-by-step workflow.
-- **Compare Tools** — the honest tradeoff between API-based generation, other paid tools, and local/self-hosted models — never just "APIs are easier."
-- **Launch It** — pricing, positioning, and where to find your first client. This is the part most tutorials skip, and the reason this curriculum exists.
-- **Outputs** — a reusable artifact (a script template, a pricing sheet, an outreach message) saved in the module's own `outputs/` folder.
-
-See [LESSON_TEMPLATE.md](LESSON_TEMPLATE.md) for the full template used to write every module.
-
-## Getting started
-
-**Read online.** Browse a track under [`tracks/`](tracks/) — start with [Track 1](tracks/01-ai-video-ads-ugc/).
-
-**Clone and go:**
-
+### Manual
 ```bash
-git clone https://github.com/Anil-matcha/ai-creator-academy.git
-cd ai-creator-academy
-open tracks/01-ai-video-ads-ugc/01-how-ugc-works/module.md
+cd ComfyUI/custom_nodes
+git clone https://github.com/Anil-matcha/ai-clipping-comfyui
+pip install -r ai-clipping-comfyui/requirements.txt
 ```
 
-### Prerequisites
+---
 
-- No coding required.
-- Either an API key for a generative media provider (any provider works — [muapi.ai](https://muapi.ai) is used as the reference throughout, since it aggregates 500+ models under one API), or a local/self-hosted setup (e.g. ComfyUI) for the modules that support it — every module's "Compare Tools" section covers both paths.
-- Curiosity about running this as an actual service, not just a hobby.
+## Quick Start
 
-## FAQ
+1. Sign up at [muapi.ai](https://muapi.ai) and grab a key from **Dashboard → API Keys → Create Key**.
+2. Right-click the ComfyUI canvas → **Add Node** → **✂️ AI Clipping**.
+3. Add a **🔑 AI Clipping API Key** node, paste your key, and wire its output into the AI Clipping node.
+4. Paste a hosted video URL (or a local file path), set `num_clips`, hit **Queue Prompt**.
 
-**Do I need to know how to code?**
-No. Every module is written for creators and freelancers, not developers — the only technical step in most modules is calling a generation API or using a tool's UI.
+> **Tip:** If you use the [MuAPI CLI](https://github.com/SamurAIGPT/muapi-cli), run `muapi auth configure --api-key YOUR_KEY` once and every node will pick the key up automatically — no need to paste it anywhere.
 
-**Do I have to use muapi.ai?**
-No — any generative media provider works. muapi.ai is used as the reference implementation throughout because it aggregates many models behind one API, but the underlying technique in each module isn't provider-specific.
+---
 
-**Is there a local/free-to-run option, or do I need to pay for API credits?**
-Both are covered. Every module's "Compare Tools" section shows the API path alongside a local/self-hosted path (e.g. ComfyUI) where one realistically exists, with an honest cost/speed/quality tradeoff.
+## Node Reference
 
-**Why isn't [track/niche] covered yet?**
-Only Track 1 is fully written so far — it's the pilot proving the format before the rest get written. See [ROADMAP.md](ROADMAP.md) for what's planned, and [CONTRIBUTING.md](CONTRIBUTING.md) if you want to help write one.
+### 🔑 AI Clipping API Key
 
-## Contributing
+Set your muapi.ai API key once and wire the output to all AI Clipping nodes. Alternatively, leave every `api_key` field blank — nodes auto-read from `~/.muapi/config.json` if you've authenticated via the CLI.
 
-Contributions of new modules, fixes to existing ones, or new tracks are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+---
+
+### ✂️ AI Clipping
+
+Run the full clipping pipeline server-side and return a ranked list of vertical short clips.
+
+| Field | Values | Default | Notes |
+|-------|--------|---------|-------|
+| `video_url` | URL string | — | Hosted MP4 / MOV URL of the source video |
+| `video_path` | Local path | — | Alternative to `video_url` — file is auto-uploaded to muapi |
+| `num_clips` | 1 – 20 | `3` | How many highlights to extract |
+| `aspect_ratio` | `9:16` / `1:1` / `4:5` | `9:16` | `9:16` for Shorts/TikTok/Reels, `1:1` for IG Feed, `4:5` portrait |
+| `return_coordinates_only` | bool | `false` | Return only highlight time ranges, skip cropping |
+| `api_key` | Optional — leave blank if using the API Key node or CLI config | — | |
+
+Provide **either** `video_url` **or** `video_path` (not both). When `return_coordinates_only=true`, the response carries `start_time`/`end_time` per highlight but no `clip_url` — render the clips yourself with ffmpeg or any downstream node.
+
+**Outputs**
+- `first_clip_url` (STRING) — URL of the top-ranked clip (most useful to pipe directly into Save Video)
+- `first_frame` (IMAGE) — first frame of the top clip, ready for previews / further processing
+- `highlights_json` (STRING) — full JSON array of every clip, with metadata (`title`, `score`, `hook_sentence`, `virality_reason`, `start_time`, `end_time`, `clip_url`). Pass this to **Pick Clip** to fan out.
+- `request_id` (STRING) — for re-fetching the result later
+- `clip_count` (INT) — how many clips actually came back
+
+**Endpoint:** `POST /api/v1/ai-clipping`
+
+---
+
+### ✂️ AI Clipping Pick Clip
+
+Pick the Nth clip from the `highlights_json` returned by the main node. Use this to fan out — e.g. send clip #1 to one Save Video, clip #2 to another, etc.
+
+| Field | Values | Default | Notes |
+|-------|--------|---------|-------|
+| `highlights_json` | JSON array | — | Wire from `AI Clipping` → `highlights_json` |
+| `index` | 1 – 50 | `1` | 1-based rank (#1 = top-scoring clip) |
+| `load_first_frame` | bool | `true` | Download the clip and return its first frame |
+
+**Outputs:** `clip_url` · `first_frame` (IMAGE) · `title` · `hook_sentence` · `start_time` · `end_time` · `score`
+
+Out-of-range indices clamp to the available range. If the input list is empty, returns blanks.
+
+---
+
+### ✂️ AI Clipping Save Video
+
+Downloads a clip URL to ComfyUI's output folder and returns all frames as an IMAGE tensor for use with other nodes (preview, VHS, upscale, etc.).
+
+| Field | Description |
+|-------|-------------|
+| `video_url` | URL returned by AI Clipping or Pick Clip |
+| `save_subfolder` | Subfolder under `ComfyUI/output/` (default: `ai_clipping`) |
+| `filename_prefix` | Filename prefix (default: `clip`) |
+| `frame_load_cap` | Optional max frames returned (`0` = all) |
+| `skip_first_frames` | Skip N frames from the start |
+| `select_every_nth` | Stride for frame selection |
+
+**Outputs:** `frames` (IMAGE) · `filepath` (STRING) · `frame_count` (INT)
+
+---
+
+## Example Workflows
+
+Load `AiClipping_Example.json` via **File → Load** in ComfyUI.
+
+| File | Description |
+|------|-------------|
+| `AiClipping_Example.json` | Long video URL → top clip → save to disk + preview frame |
+| `AiClipping_FanOut_Example.json` | Same pipeline plus Pick Clip nodes for #2 and #3 saved separately |
+
+**Single best clip:**
+```
+[🔑 API Key] ───────────────────────────────────────────────────────┐
+                                                                     ↓
+(video URL) → [✂️ AI Clipping] → first_clip_url → [✂️ Save Video] → frames → [Preview Image]
+```
+
+**Fan-out — pick clips #1, #2, #3 separately:**
+```
+                                            ┌→ [✂️ Pick Clip #1] → [✂️ Save Video]
+[✂️ AI Clipping] → highlights_json ─────────┼→ [✂️ Pick Clip #2] → [✂️ Save Video]
+                                            └→ [✂️ Pick Clip #3] → [✂️ Save Video]
+```
+
+---
+
+## Aspect Ratio Picker
+
+| Platform | Ratio | Sweet-spot duration |
+|:---|:---|:---|
+| TikTok / Reels / YouTube Shorts | `9:16` | 30–75s |
+| Instagram Feed | `1:1` | 15–45s |
+| Pinterest / portrait | `4:5` | 30–60s |
+
+Default to `9:16` unless the platform is specified.
+
+---
+
+## Output Schema (`highlights_json`)
+
+```json
+[
+  {
+    "title": "The one mistake that cost me $50K",
+    "start_time": 124.3,
+    "end_time": 187.6,
+    "score": 92,
+    "hook_sentence": "Nobody talks about this, but it killed my first startup...",
+    "virality_reason": "Opens with a number + regret, peaks on a contrarian lesson",
+    "clip_url": "https://.../short_1.mp4"
+  }
+]
+```
+
+When `return_coordinates_only=true`, each entry has `start_time`/`end_time` but no `clip_url` — render locally.
+
+---
+
+## API
+
+This node pack uses the **muapi.ai** API under the hood:
+
+- **AI Clipping:**  `POST https://api.muapi.ai/api/v1/ai-clipping`
+- **Poll:**        `GET  https://api.muapi.ai/api/v1/predictions/{request_id}/result`
+- **Upload:**      `POST https://api.muapi.ai/api/v1/upload_file`
+
+Authentication is a single `x-api-key` header — no session tokens required.
+
+The submit-then-poll flow:
+
+```
+POST /api/v1/ai-clipping   →  { "request_id": "abc123" }
+GET  /api/v1/predictions/abc123/result
+                           →  { "status": "processing" }       (keep polling)
+                           →  { "status": "completed",
+                                "shorts": [ {...}, {...}, ... ] }
+```
+
+Status values: `queued`, `pending`, `processing`, `completed`, `failed`.
+
+---
+
+## Requirements
+
+- Python ≥ 3.8
+- `requests` ≥ 2.28 · `Pillow` ≥ 9.0 · `numpy` ≥ 1.23 · `torch` ≥ 2.0 · `opencv-python` ≥ 4.7
+
+---
+
+## Want More Models?
+
+This repo is focused on AI Clipping only. If you need access to **100+ models** — Kling, Veo3, Flux, HiDream, GPT-image-1.5, Imagen4, Wan, lipsync, audio, image enhancement and more — check out the full MuAPI ComfyUI node pack:
+
+**[SamurAIGPT/muapi-comfyui](https://github.com/SamurAIGPT/muapi-comfyui)** — ComfyUI nodes for every muapi.ai model in one place.
+
+---
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT © 2026
+
+---
+
+<sub>**Keywords:** Opus Clip alternative, Opus Clip ComfyUI, Opus.pro alternative, Klap alternative, Klap.app alternative, Vizard alternative, 2short.ai alternative, free Opus Clip, open-source Opus Clip, AI video clipper, AI clipping, AI clipper for ComfyUI, ComfyUI shorts generator, ComfyUI TikTok generator, ComfyUI Reels generator, viral clip generator, podcast clipper, podcast to shorts, long video to shorts, video highlight extraction, AI highlight extractor, automatic vertical reframing, face-tracked vertical crop, autocrop video, viral score, hook detection, ComfyUI video editing, muapi.ai, YouTube Shorts maker, TikTok clip maker, Instagram Reels maker.</sub>
+
