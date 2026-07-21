@@ -4,18 +4,18 @@
 
 Most AI education either teaches you to prompt a tool, or teaches you to build one. This teaches neither — it teaches you to turn AI-generated image/video/audio into an actual, priced, sellable service or product. Every module ends with pricing, positioning, and where to find your first client — not just "how it works."
 
-Six tracks, ranked by real-world demand evidence, not by what's easiest to teach:
+Six independent tracks — pick whichever matches the business you want to build, in any order. They're numbered and ranked by real-world demand evidence, not by difficulty or prerequisite order:
 
-```mermaid
-flowchart LR
-  T1["Track 1<br/>AI Video Ads & UGC"] --> T2["Track 2<br/>Faceless AI Channels"]
-  T1 --> T3["Track 3<br/>AI Avatars & Influencers"]
-  T1 --> T4["Track 4<br/>AI Product Photography"]
-  T1 --> T5["Track 5<br/>AI Real Estate Staging"]
-  T1 --> T6["Track 6<br/>AI Headshots & Portraits"]
-```
+| Track | Status |
+|---|---|
+| 1. AI Video Ads & UGC | ✅ Live |
+| 2. Faceless AI Channels | ⬜ Coming soon |
+| 3. AI Avatars & Influencers | ⬜ Coming soon |
+| 4. AI Product Photography | ⬜ Coming soon |
+| 5. AI Real Estate Staging | ⬜ Coming soon |
+| 6. AI Headshots & Portraits | ⬜ Coming soon |
 
-See [ROADMAP.md](ROADMAP.md) for full status — Track 1 is live, the rest are coming soon.
+See [ROADMAP.md](ROADMAP.md) for full module-by-module status.
 
 ## The shape of a module
 
