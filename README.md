@@ -47,7 +47,7 @@ open tracks/01-ai-video-ads-ugc/01-how-ugc-works/module.md
 ### Prerequisites
 
 - No coding required.
-- An API key for a generative media provider (any provider works — [muapi.ai](https://muapi.ai) is used as the reference throughout, since it aggregates 250+ models under one API).
+- Either an API key for a generative media provider (any provider works — [muapi.ai](https://muapi.ai) is used as the reference throughout, since it aggregates 500+ models under one API), or a local/self-hosted setup (e.g. ComfyUI) for the modules that support it — every module's "Compare Tools" section covers both paths.
 - Curiosity about running this as an actual service, not just a hobby.
 
 ## Why free and open source
