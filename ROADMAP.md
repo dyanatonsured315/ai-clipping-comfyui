@@ -41,8 +41,9 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 1 | The Idea → Script → Storyboard → Video → Voice → Music → Captions → Publish Pipeline | ⬜ |
 | 2 | Building a TikTok/Reels Factory | ⬜ |
 | 3 | Building a YouTube Shorts Factory | ⬜ |
-| 4 | Batching & Scheduling at Volume | ⬜ |
-| 5 | Selling Content-Factory Output as a Service | ⬜ |
+| 4 | AI Thumbnail Design | ⬜ |
+| 5 | Batching & Scheduling at Volume | ⬜ |
+| 6 | Selling Content-Factory Output as a Service | ⬜ |
 
 ## Track 5 — AI Avatars & Influencers ⬜
 
@@ -73,7 +74,16 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 3 | Selling as a Productized Service | ⬜ |
 | 4 | Batch Workflows for Catalogs | ⬜ |
 
-## Track 8 — AI Real Estate (Virtual Staging) ⬜
+## Track 8 — AI Fashion & Virtual Try-On ⬜
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Virtual Try-On Basics (garment on model/customer photo) | ⬜ |
+| 2 | Consistent Model/Body Representation | ⬜ |
+| 3 | Selling to Fashion E-commerce Brands | ⬜ |
+| 4 | Beauty Content (makeup/hair try-on) as an Adjacent Service | ⬜ |
+
+## Track 9 — AI Real Estate (Virtual Staging) ⬜
 
 | # | Module | Status |
 |---|---|---|
@@ -81,14 +91,33 @@ Status key: ✅ live · 🚧 in progress · ⬜ coming soon
 | 2 | Pricing Against Traditional Staging | ⬜ |
 | 3 | Selling to Realtors & Agencies | ⬜ |
 
-## Track 9 — AI Headshots & Portraits ⬜
+## Track 10 — AI Headshots & Portraits ⬜
 
 | # | Module | Status |
 |---|---|---|
 | 1 | Consistent Headshot Generation | ⬜ |
 | 2 | Standing Out Against Fiverr Competition | ⬜ |
 
-## Track 10 — AI Tools Mastery ⬜
+## Track 11 — AI Print-on-Demand & Merch Design ⬜
+
+| # | Module | Status |
+|---|---|---|
+| 1 | Designing Sellable AI Art for Merch | ⬜ |
+| 2 | Print-on-Demand Platform Basics (Etsy, Redbubble-style) | ⬜ |
+| 3 | Building a Catalog Without Repeating Yourself | ⬜ |
+| 4 | Pricing & Passive-Income Math for POD | ⬜ |
+
+## Track 12 — AI Stock Content & Licensing ⬜
+
+The only track with no client relationship at all — generate once, license repeatedly.
+
+| # | Module | Status |
+|---|---|---|
+| 1 | What Actually Sells on Stock Marketplaces | ⬜ |
+| 2 | Batch-Generating a Licensable Catalog | ⬜ |
+| 3 | Licensing Models & Realistic Passive-Income Expectations | ⬜ |
+
+## Track 13 — AI Tools Mastery ⬜
 
 Not tool tutorials — a buyer's guide: which tool for which creative outcome, and why.
 
@@ -99,7 +128,7 @@ Not tool tutorials — a buyer's guide: which tool for which creative outcome, a
 | 3 | Voice/Audio Models — Which One for Which Use Case | ⬜ |
 | 4 | API vs. Local: A Decision Framework | ⬜ |
 
-## Track 11 — AI Freelancing & Agency Business ⬜
+## Track 14 — AI Freelancing & Agency Business ⬜
 
 The business skills every other track assumes you already have.
 
