@@ -51,7 +51,60 @@ Paid communities teaching this (Skool/Whop-style, $47–$97/mo) already cluster 
 
 ### Start here
 
-[**Track 1: AI Video Ads & UGC**](tracks/01-ai-video-ads-ugc/) is the only fully-written track today — it's the proof-of-format pilot every other track will follow. Start with [Module 1: How AI UGC Actually Works](tracks/01-ai-video-ads-ugc/01-how-ugc-works/module.md).
+[**Track 1: AI Video Ads & UGC**](tracks/01-ai-video-ads-ugc/) is the only fully-written track today — it's the proof-of-format pilot every other track will follow.
+
+<details>
+<summary><b>Track 1 — all 5 modules (click to expand)</b></summary>
+
+| # | Module |
+|:---:|---|
+| 1 | [How AI UGC Actually Works](tracks/01-ai-video-ads-ugc/01-how-ugc-works/module.md) |
+| 2 | [Character & Face Consistency](tracks/01-ai-video-ads-ugc/02-character-consistency/module.md) |
+| 3 | [Building a 10-Ad Batch](tracks/01-ai-video-ads-ugc/03-building-an-ad-batch/module.md) |
+| 4 | [Pricing & Selling UGC Ads](tracks/01-ai-video-ads-ugc/04-pricing-and-selling-ugc/module.md) |
+| 5 | [Case Study Teardown](tracks/01-ai-video-ads-ugc/05-case-study-teardown/module.md) |
+
+</details>
+
+### What a module actually looks like
+
+An excerpt from Track 1, so you know what you're getting before you click in.
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**From Module 1 — the script structure** <sub><i>Do It</i></sub>
+
+```
+Hook (0-2 sec)
+[A question, bold claim, or visual
+surprise that stops the scroll]
+
+Problem / Pitch (2-15 sec)
+[What problem does the viewer have,
+said like you'd tell a friend]
+
+Proof / Demo (15-25 sec)
+Call to Action (25-30 sec)
+```
+
+</td>
+<td valign="top" width="50%">
+
+**From Module 4 — real pricing ranges** <sub><i>Launch It</i></sub>
+
+| Stage | Price |
+|---|---|
+| Gig-level, per ad | $10–$55 |
+| Project batch (5-8 ads) | $150–$300 |
+| Agency retainer | $1,500–$3,000/mo |
+
+Anchored to documented freelance-marketplace and agency-retainer ranges — not invented.
+
+</td>
+</tr>
+</table>
 
 ## The shape of a module
 
